@@ -42,6 +42,7 @@ def _rgb_to_hex(values):
     return hex, rgb
 
 def _create_gnome_terminal_profile(name, gconf_keys):
+    # read the defaults from the yaml file
     profile_contents = {
         'audible-bell': False,
         'background-color': '',
@@ -161,7 +162,6 @@ def main():
     print(f'Writing {outfile}')
     with open(outfile, 'w') as fh:
         fh.write(f'{profile}\n')
-
 
 if __name__ == '__main__':
     sys.exit(main())
