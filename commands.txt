@@ -1,0 +1,18 @@
+# List the profiles
+dconf list /org/gnome/terminal/legacy/profiles:/
+
+# Dump a profile's contents
+dconf dump /org/gnome/terminal/legacy/profiles:/:c676fd71-79c9-4b1c-8648-697b0fe2d9ca/
+
+# Write the list of profile UUIDs
+dconf write /org/gnome/terminal/legacy/profiles:/list "['c676fd71-79c9-4b1c-8648-697b0fe2d9ca']"
+
+# Read the profile list array
+dconf read /org/gnome/terminal/legacy/profiles:/list
+
+# Rest the settings
+dconf reset -f /org/gnome/terminal/
+
+# Load a profile
+dconf load /org/gnome/terminal/legacy/profiles:/:c676fd71-79c9-4b1c-8648-697b0fe2d9ca/ ${PROFILE}
+
