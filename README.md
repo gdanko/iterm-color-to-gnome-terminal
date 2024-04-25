@@ -27,7 +27,7 @@ $ ./iterm-color-to-gnome-terminal.py -i ~/iTermSchemes/poorlynamedfile.itermcolo
 ```
 Importing a dump file into Gnome Terminal
 ```
-$ ./import-gnome-terminal-profile.py -i Novel.itermcolors
+$ ./import-gnome-terminal-profile.py -i Novel.dconf
 ```
 
 ## To Do
